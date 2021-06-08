@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -20,48 +21,52 @@ class ChatFragment : Fragment() {
 
     private var isRecording = false
     private lateinit var mediaRecorder: MediaRecorder
+    private lateinit var floatingButton: FloatingActionButton
 
-    @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        return inflater.inflate(R.layout.fragment_chat, container, false)
+    }
 
-        val floatingButton = container?.findViewById<FloatingActionButton>(R.id.fab_record)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        floatingButton?.setOnClickListener {
+        floatingButton = view.findViewById(R.id.fab_record)
+
+        floatingButton.setOnClickListener {
+
             if (checkPermission()) {
-                if (isRecording) {
+                isRecording = if (isRecording) {
                     //stop Recording
-                    floatingButton.setImageDrawable(
-                        resources.getDrawable(
-                            R.drawable.ic_baseline_mic_24,
-                            null
-                        )
-                    )
+                    changeDrawableFab(R.drawable.ic_baseline_mic_24)
                     stopRecording()
-                    isRecording = false
+                    false
                 } else {
                     //start recording
-                    floatingButton.setImageDrawable(
-                        resources.getDrawable(
-                            R.drawable.ic_baseline_stop_24,
-                            null
-                        )
-                    )
+                    changeDrawableFab(R.drawable.ic_baseline_stop_24)
                     startRecording()
-                    isRecording = true
+                    true
                 }
             } else { requestPermission() }
         }
+    }
 
-        return inflater.inflate(R.layout.fragment_chat, container, false)
+    @SuppressLint("UseCompatLoadingForDrawables")
+    private fun changeDrawableFab(drawId: Int) {
+        floatingButton.setImageDrawable(
+            resources.getDrawable(
+                drawId,
+                null
+            )
+        )
     }
 
     private fun startRecording() {
         val recordPath = activity?.getExternalFilesDir("/")?.absolutePath
-        val formatter = SimpleDateFormat("yyyyMMddhhmmss", Locale.getDefault())
+        val formatter = SimpleDateFormat("yyyy_MM_dd_hhmmss", Locale.getDefault())
         val date = Date()
         val recordFile = "${formatter.format(date)}.3gp"
 
@@ -86,12 +91,10 @@ class ChatFragment : Fragment() {
     }
 
     private fun checkPermission(): Boolean {
-        return context?.let {
-            ActivityCompat.checkSelfPermission(
-                it,
+        return ActivityCompat.checkSelfPermission(
+                requireContext(),
                 Manifest.permission.RECORD_AUDIO
-            )
-        } != PackageManager.PERMISSION_GRANTED
+            ) == PackageManager.PERMISSION_GRANTED
     }
 
     private fun requestPermission() {
@@ -106,4 +109,6 @@ class ChatFragment : Fragment() {
             )
         }
     }
+
+
 }
