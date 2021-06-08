@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var recordButton: FloatingActionButton
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,21 +38,7 @@ class MainActivity : AppCompatActivity() {
         recordButton.isEnabled = false
 
         initPermission()
-
     }
 
-    private fun initPermission() {
-        if  (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(
-                    Manifest.permission.RECORD_AUDIO,
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE
-                ),
-                111
-            )
-            recordButton.isEnabled = true
-        }
 
-    }
 }

@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/E:/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/category/baseline_category_24.xml" />
+                                      <entry key="url" value="jar:file:/E:/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/stop/baseline_stop_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,7 +33,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_baseline_category_24" />
+                            <entry key="outputName" value="ic_baseline_stop_24" />
                             <entry key="sourceFile" value="E:\Tcejorp\Android\EnkrateiaApp-AndroidFrontEnd" />
                           </map>
                         </option>
