@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/9834929cb728c2f24a1678c02d821111/lifecycle-livedata-core-ktx-2.2.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/9834929cb728c2f24a1678c02d821111/lifecycle-livedata-core-ktx-2.2.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/9834929cb728c2f24a1678c02d821111/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/93d62dbc308a9343827d966354879098/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/93d62dbc308a9343827d966354879098/lifecycle-livedata-core-ktx-2.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/93d62dbc308a9343827d966354879098/lifecycle-livedata-core-ktx-2.2.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

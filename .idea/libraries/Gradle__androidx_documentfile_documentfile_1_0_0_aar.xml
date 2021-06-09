@@ -4,9 +4,10 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7c3806bd792c721f0909cd9f09146946/documentfile-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7c3806bd792c721f0909cd9f09146946/documentfile-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7c3806bd792c721f0909cd9f09146946/documentfile-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/7c3806bd792c721f0909cd9f09146946/documentfile-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/7c3806bd792c721f0909cd9f09146946/documentfile-1.0.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/7c3806bd792c721f0909cd9f09146946/documentfile-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/16dbfbe8ccffd5aa9ff9ea099d9e9dd1/documentfile-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/16dbfbe8ccffd5aa9ff9ea099d9e9dd1/documentfile-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/16dbfbe8ccffd5aa9ff9ea099d9e9dd1/documentfile-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

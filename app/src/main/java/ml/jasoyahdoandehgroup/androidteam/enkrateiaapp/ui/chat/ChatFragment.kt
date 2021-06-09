@@ -11,17 +11,22 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import ml.jasoyahdoandehgroup.androidteam.enkrateiaapp.R
+import ml.jasoyahdoandehgroup.androidteam.enkrateiaapp.data.Chat
 import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.collections.ArrayList
 
 class ChatFragment : Fragment() {
 
     private var isRecording = false
     private lateinit var mediaRecorder: MediaRecorder
     private lateinit var floatingButton: FloatingActionButton
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,7 +39,21 @@ class ChatFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //dummy, just delete
+        val chatUser = Chat("001", "1", "22-12-21 22:22:22" , null, false)
+        val chatBot = Chat("002", null, "22-12-21","Hi! You need to response for what were you doing now", true)
+
+        val adapter = ChatAdapter()
+
+        adapter.setChat(
+            listOf(chatUser, chatBot)
+        )
+
         floatingButton = view.findViewById(R.id.fab_record)
+        recyclerView = view.findViewById(R.id.rv_message)
+        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.adapter = adapter
+        recyclerView.setHasFixedSize(true)
 
         floatingButton.setOnClickListener {
 
@@ -73,7 +92,7 @@ class ChatFragment : Fragment() {
         mediaRecorder = MediaRecorder()
         mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC)
         mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
-        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT)
+        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
         mediaRecorder.setOutputFile("$recordPath/$recordFile")
 
         try {

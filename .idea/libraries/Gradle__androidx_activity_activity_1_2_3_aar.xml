@@ -2,15 +2,16 @@
   <library name="Gradle: androidx.activity:activity:1.2.3@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54402e03882ddbc87771597b71757006/activity-1.2.3/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/54402e03882ddbc87771597b71757006/activity-1.2.3/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/0c6be39011251ec9bf4a6f75ae7ad7e4/activity-1.2.3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54402e03882ddbc87771597b71757006/activity-1.2.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54402e03882ddbc87771597b71757006/activity-1.2.3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54402e03882ddbc87771597b71757006/activity-1.2.3/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/54402e03882ddbc87771597b71757006/activity-1.2.3/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/54402e03882ddbc87771597b71757006/activity-1.2.3/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/54402e03882ddbc87771597b71757006/activity-1.2.3/res" />
+      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/0c6be39011251ec9bf4a6f75ae7ad7e4/activity-1.2.3/res" />
+      <root url="jar://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/0c6be39011251ec9bf4a6f75ae7ad7e4/activity-1.2.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../AppData/Gradle/caches/transforms-2/files-2.1/0c6be39011251ec9bf4a6f75ae7ad7e4/activity-1.2.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
