@@ -1,12 +1,7 @@
 package ml.jasoyahdoandehgroup.androidteam.enkrateiaapp.ui
 
-import android.Manifest
-import android.content.pm.PackageManager
-import android.media.MediaRecorder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -17,8 +12,6 @@ import ml.jasoyahdoandehgroup.androidteam.enkrateiaapp.R
 
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var recordButton: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
